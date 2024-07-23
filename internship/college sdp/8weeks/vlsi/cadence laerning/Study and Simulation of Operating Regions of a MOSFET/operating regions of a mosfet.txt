@@ -1,0 +1,48 @@
+For nmos1v transistor - vth = 0.16v
+
+Scenario-1
+Vgs = 0V, Vds = 0.8V
+Since Vgs < Vth - Channel is absent
+MOSFET is in cutoff region
+By simulation
+cutoff                           ID = 0
+vth                 169.831m        
+region                3             
+id                    5.19852n      
+beff                360.586n        
+betaeff             617.538u        
+
+
+Scenario-2
+Vgs = 0.8V, Vds=0.08V, Vgs-Vth = 0.8-0.16=0.64v
+Since Vgs > Vth - Channel is Present 
+but since Vds < Vgs-Vth, 
+MOSFET is in Linear Region                     ID =kn/2(2(VGS − VTN )VDS − VDS*VDS )
+By simulation
+Linear Region
+vth                 169.831m        
+region                1             
+id                   24.4813u       
+beff                123.297u        
+betaeff             551.16u   
+
+
+
+Scenario-3
+Vgs = 0.8V, Vds=0.8V, Vgs-Vth = 0.8-0.16=0.64v
+Since Vgs > Vth - Channel is Present
+but since Vds > Vgs-Vth, channel is pinched off near drain
+MOSFET is in Saturation Region                     ID =kn/2(VGS − VTN )*(VGS − VTN )
+By simulation
+ Saturation Region
+
+vth                 169.831m        
+region                2             
+id                   97.8081u       
+beff                492.596u        
+betaeff             551.16u   
+
+
+region - 1 - linear
+region - 2 - saturation
+region - 3 - cutoff/subthreshold

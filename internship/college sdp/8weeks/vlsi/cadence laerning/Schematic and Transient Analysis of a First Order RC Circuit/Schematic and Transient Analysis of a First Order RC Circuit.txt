@@ -1,0 +1,17 @@
+IN RC CIRCUIT
+
+The Propagation delay can be theoretically calculated as tp
+tp = 0.69*r*c =0.69*1k*1p = 0.69ns
+
+
+from simulation
+Propagation delay
+tp = 703.2E-12 = 703ps = 0.703ns
+
+The Rise time of the output signal can be theoretically calculated as tr
+tr = 202*r*c = 2.2*1k*1p = 2.2ns
+
+from simulation
+Rise time
+tr = 2.196E-9 = 2.19ns = 2190ps
+
